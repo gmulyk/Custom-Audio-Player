@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player with Web Audio API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--VERSION 1.0.1 UTILIZES WEB AUDIO API INSTEAD OF HTML5-->
+<body>
+    <div id="progressContainer">
+        <div id="progressBar"></div>
+    </div>
+
+    <button id="playPauseBtn">Play</button>
+    <div class="panel-grid">
+        <div id="audioContainer1" class="audio-panel">
+            <img src="Images/cricket.png" alt="Audio Icon" class="audio-icon">
+            <p class="sound-title">Night Crickets</p>
+            <div class="volume-indicator">50%</div>
+            <div class="volume-slider">
+                 <div class="volume-active"></div>
+            </div>
+        </div>
+
+        <div id="audioContainer2" class="audio-panel">
+            <img src="Images/campfire.png" alt="Audio Icon" class="audio-icon">
+            <p class="sound-title">Campfire</p>
+            <div class="volume-indicator">50%</div>
+            <div class="volume-slider">
+                <div class="volume-active"></div>
+            </div>
+        </div>
+    </div> 
+
+    <script src="js/audioPanels.js"></script>
+</body>
+</html>
